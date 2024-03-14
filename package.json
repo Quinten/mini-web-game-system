@@ -1,0 +1,23 @@
+{
+  "name": "mini-web-game-system",
+  "version": "1.0.0",
+  "description": "System for the mini-web-game template",
+  "main": "index.js",
+  "scripts": {
+    "build": "echo \"No build specified\" && exit 0",
+    "test": "echo \"No test specified\" && exit 0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/Quinten/mini-web-game-system.git"
+  },
+  "keywords": [
+    "mini-web-game"
+  ],
+  "author": "Quinten",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Quinten/mini-web-game-system/issues"
+  },
+  "homepage": "https://github.com/Quinten/mini-web-game-system#readme"
+}
