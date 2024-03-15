@@ -22,5 +22,5 @@ let addComponents = (components) => {
 export default Object.freeze({
     systems,
     systemTypes,
-    loadComponents
+    addComponents
 });
