@@ -1,9 +1,11 @@
 let PRECACHE_URLS = [
     'index.html'
 ];
-let PRECACHE = (process === undefined) ? 'peegee' : process.env.PROJECT_NAME;
 
-let start = () => {
+let start = (precache_name) => {
+
+    let PRECACHE = (precache_name === undefined) ? 'mwg' : precache_name;
+
     let createCacheBustedRequest = url => {
         let request = new Request(url, { cache: 'reload' });
         if ('cache' in request) {
