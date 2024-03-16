@@ -1,6 +1,6 @@
 {
   "name": "mini-web-game-system",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "description": "System for the mini-web-game template",
   "main": "src/index.js",
   "scripts": {
