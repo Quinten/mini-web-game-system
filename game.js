@@ -2,20 +2,8 @@ import icons from './icons.js';
 import systemsModule from './systems.js';
 
 let game = (entities, components) => {
-    icons.addIcons();
 
-    try {
-        if (process.env.NODE_ENV === 'production') {
-            if ('serviceWorker' in navigator) {
-                window.addEventListener('load', e => {
-                    navigator.serviceWorker.register(
-                        new URL('./sw.js', import.meta.url),
-                        {type: 'module'}
-                    );
-                });
-            }
-        }
-    } catch (err) {}
+    icons.addIcons();
 
     let {systems, systemTypes, addComponents} = systemsModule;
 
