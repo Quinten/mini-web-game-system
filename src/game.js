@@ -1,9 +1,9 @@
 import icons from './icons.js';
 import systemsModule from './systems.js';
 
-let game = (entities, components) => {
+let game = (entities, components, iconDraw) => {
 
-    icons.addIcons();
+    icons.addIcons(iconDraw);
 
     let {systems, systemTypes, addComponents} = systemsModule;
 

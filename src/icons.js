@@ -1,12 +1,16 @@
-let addIcons = _ => {
+let addIcons = (draw) => {
     let c = document.createElement('canvas');
     c.width = 1024;
     c.height = 1024;
     let ctx = c.getContext('2d');
-    ctx.fillStyle = 'white';
-    ctx.fillRect(0, 0, 1024, 1024);
-    ctx.fillStyle = 'lightblue';
-    ctx.fillRect(256, 256, 512, 512);
+    if (draw) {
+        draw(ctx);
+    } else {
+        ctx.fillStyle = 'white';
+        ctx.fillRect(0, 0, 1024, 1024);
+        ctx.fillStyle = 'lightblue';
+        ctx.fillRect(256, 256, 512, 512);
+    }
     let icon = c.toDataURL();
     let favi = document.createElement('link');
     favi.rel = 'icon';
